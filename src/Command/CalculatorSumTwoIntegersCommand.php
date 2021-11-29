@@ -1,4 +1,5 @@
 <?php
+
 namespace Fayez\Calculator\Command;
 
 use Symfony\Component\Console\Command\Command;

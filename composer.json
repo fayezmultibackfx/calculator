@@ -2,7 +2,6 @@
   "name": "fayez/calculator",
   "type": "symfony-bundle",
   "description": "Summing up two integers",
-  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Fayez\\Calculator\\": ""
+      "Fayez\\Calculator\\": "src"
     }
   }
 }
