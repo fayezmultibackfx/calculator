@@ -1,0 +1,25 @@
+{
+  "name": "fayez/calculator",
+  "type": "symfony-bundle",
+  "description": "Summing up two integers",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fayez Ghazzawi",
+      "email": "fayez.ghazzawi@multibankfx.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "symfony/console": "*",
+    "symfony/dependency-injection": "*",
+    "symfony/config": "*",
+    "symfony/http-kernel": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fayez\\Calculator\\": ""
+    }
+  }
+}

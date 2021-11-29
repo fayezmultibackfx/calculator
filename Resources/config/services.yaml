@@ -1,0 +1,8 @@
+services:
+  fayez.calculator.command.sum:
+    class: Fayez\Calculator\Command\CalculatorSumTwoIntegersCommand
+    tags:
+      -  { name: console.command }
+    arguments:
+      $a: '%fayez.a%'
+      $b: '%fayez.b%'
