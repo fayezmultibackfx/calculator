@@ -1,5 +1,5 @@
 services:
-  fayez.calculator.command.sum:
+  fayez.calculator.command.fayez:
     class: Fayez\Calculator\Command\CalculatorSumTwoIntegersCommand
     tags:
       -  { name: console.command }
