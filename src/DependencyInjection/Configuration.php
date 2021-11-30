@@ -7,24 +7,23 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('fayez_calculator');
-        $rootNode = $treeBuilder->getRootNode();
+        $builder = new TreeBuilder();
 
-        $rootNode
-            ->children()
-            ->integerNode('a')
-            ->isRequired()
-            ->defaultValue(0)
-            ->end()
-            ->integerNode('b')
-            ->isRequired()
-            ->defaultValue(0)
-            ->end()
-            ->end();
+        $rootNode = $builder->root('fayez_calculator');
 
-        return $treeBuilder;
+        $rootNode->children()
+                    ->integerNode('a')
+                        ->isRequired()
+                        ->defaultValue(0)
+                    ->end()
+                    ->integerNode('b')
+                        ->isRequired()
+                        ->defaultValue(0)
+                    ->end()
+                ->end();
+
+        return $builder;
     }
 }
