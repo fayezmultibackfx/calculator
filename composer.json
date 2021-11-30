@@ -11,10 +11,10 @@
   ],
   "require": {
     "php": "^7.4",
-    "symfony/console": "*",
-    "symfony/dependency-injection": "*",
-    "symfony/config": "*",
-    "symfony/http-kernel": "*"
+    "symfony/console": "^3.4",
+    "symfony/dependency-injection": "^3.4",
+    "symfony/config": "^3.4",
+    "symfony/http-kernel": "^3.4"
   },
   "autoload": {
     "psr-4": {
