@@ -14,15 +14,13 @@ class Configuration implements ConfigurationInterface
         $rootNode = $builder->root('fayez_calculator');
 
         $rootNode->children()
-                    ->integerNode('a')
-                        ->isRequired()
-                        ->defaultValue(0)
-                    ->end()
-                    ->integerNode('b')
-                        ->isRequired()
-                        ->defaultValue(0)
-                    ->end()
-                ->end();
+            ->integerNode('a')
+            ->defaultValue(0)
+            ->end()
+            ->integerNode('b')
+            ->defaultValue(0)
+            ->end()
+            ->end();
 
         return $builder;
     }
