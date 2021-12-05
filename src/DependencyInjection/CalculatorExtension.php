@@ -35,7 +35,7 @@ class CalculatorExtension extends Extension
 
     public function getAlias()
     {
-        return 'fayez';
+        return 'calc_test';
     }
 
 }
